@@ -32,7 +32,7 @@ public class EmployeeAccessSystem {
         int employeeLevel =
                 getEmployeeClearanceLevel(employee.getSecurityClearance());
 
-        if (employeeLevel < requiredLevel) {
+        if (employeeLevel < requiredLevel - 1) {
             reasons.add("Insufficient security clearance for "
                     + accessLevel + " access");
         }
